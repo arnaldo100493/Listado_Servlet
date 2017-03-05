@@ -43,7 +43,6 @@ public class ServletListadoPeliculas extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         try {
-            /* TODO output your page here. You may use following sample code. */
             ServletContext contexto = this.getServletContext();
             List<Pelicula> listadoPeliculas = (List<Pelicula>) contexto.getAttribute("listadoPeliculas");
 
