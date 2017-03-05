@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <listener>
+        <description>ServletContextListener</description>
+        <listener-class>com.list.util.VideoClubServletListener</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>ServletFormularioAgregarPelicula</servlet-name>
+        <servlet-class>com.list.view.ServletFormularioAgregarPelicula</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletListadoPeliculas</servlet-name>
+        <servlet-class>com.list.view.ServletListadoPeliculas</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletGuardarPelicula</servlet-name>
+        <servlet-class>com.list.controller.ServletGuardarPelicula</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletFormularioAgregarPelicula</servlet-name>
+        <url-pattern>/formAgregarPelicula</url-pattern>
+        <url-pattern>/formAgregarPelicula.view</url-pattern>
+        <url-pattern>/agregarPelicula</url-pattern>
+        <url-pattern>/agregarPelicula.view</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletListadoPeliculas</servlet-name>
+        <url-pattern>/listadoPeliculas</url-pattern>
+        <url-pattern>/listadoPeliculas.view</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletGuardarPelicula</servlet-name>
+        <url-pattern>/guardarPelicula</url-pattern>
+        <url-pattern>/guardarPelicula.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
