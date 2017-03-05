@@ -26,11 +26,13 @@ public class VideoClubServletListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         List<Pelicula> listadoPeliculas = new LinkedList<>();
-        listadoPeliculas.add(new Pelicula("Inception", "Nolan", 2009));
+        listadoPeliculas.add(new Pelicula("Inception", "Nolan", 2010));
+        listadoPeliculas.add(new Pelicula("Los Pitufos", "NN", 2011));
+        listadoPeliculas.add(new Pelicula("Transformers 3", "Michael Bay", 2011));
         listadoPeliculas.add(new Pelicula("The Lord of the Rings", "Jackson", 2001));
         listadoPeliculas.add(new Pelicula("Be Kind Rewind", "Gondry", 2008));
         listadoPeliculas.add(new Pelicula("Ironman", "Jhon Favreau", 2008));
-        listadoPeliculas.add(new Pelicula("Alien", "Scott", 1979));
+        listadoPeliculas.add(new Pelicula("Aliens", "Riddley Scott", 1979));
         listadoPeliculas.add(new Pelicula("Resident Evil", "Anderson", 2002));
         listadoPeliculas.add(new Pelicula("Kill Bill", "Tarantino", 2003));
 
